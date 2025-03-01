@@ -1,6 +1,9 @@
 /// <reference types="Cypress"/>
 
-const searchTerm = { valid: 'Agibank', invalid: 'InvalidTerm' }
+const searchTerm = {
+  valid: '19 Mensagens para o Ano Novo 2025 para inspirar Família e Amigos',
+  invalid: 'InvalidTerm',
+}
 const messageResult =
   'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.'
 
