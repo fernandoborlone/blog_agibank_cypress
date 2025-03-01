@@ -1,10 +1,10 @@
 /// <reference types="Cypress"/>
 
-const searchTerm = {valid: 'Agibank', invalid: 'InvalidTerm'}
-const messageResult = 'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.'
+const searchTerm = { valid: 'Agibank', invalid: 'InvalidTerm' }
+const messageResult =
+  'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.'
 
 describe('Agibank Blog - Search', () => {
-
   beforeEach(() => {
     cy.intercept('POST', '**/collect').as('postCollect')
   })
