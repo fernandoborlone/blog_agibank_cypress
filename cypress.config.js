@@ -3,13 +3,13 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   chromeWebSecurity: false,
   defaultCommandTimeout: 5000,
-  requestTimeout: 9000,
-  responseTimeout: 9000,
+  requestTimeout: 5000,
+  responseTimeout: 5000,
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     embeddedScreenshots: true,
     inlineAssets: true,
-    reportDir: 'cypress/reports',
+    reportDir: 'reports/mochawesome',
     reportFilename: 'Agibank Report',
     reportTitle: 'Agibank Report',
     reportPageTitle: 'report',
@@ -28,7 +28,7 @@ module.exports = defineConfig({
     runMode: 2,
     openMode: 2,
   },
-  video: false,
+  video: true,
   e2e: {
     baseUrl: 'https://blogdoagi.com.br',
     viewportWidth: 1280,
