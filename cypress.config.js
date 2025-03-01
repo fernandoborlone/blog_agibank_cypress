@@ -9,6 +9,7 @@ module.exports = defineConfig({
     runMode: 2,
     openMode: 2,
   },
+  video: true,
   e2e: {
     baseUrl: 'https://blogdoagi.com.br',
     viewportWidth: 1280,
