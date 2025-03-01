@@ -7,6 +7,7 @@ describe('Agibank Blog - Search', () => {
 
   beforeEach(() => {
     cy.intercept('POST', '**/collect').as('postCollect')
+    cy.intercept('POST', '**/litespeed-cache/**').as('postLitespeed')
   })
 
   it('Should find articles when searching by existing term', () => {

@@ -2,7 +2,7 @@ import locators from '../support/GUI/locators/locators'
 
 Cypress.Commands.add('access_agibank_blog_page', () => {
     cy.visit('/')
-    cy.wait_page_render('@postCollect')
+    cy.wait_page_render('@postLitespeed')
     cy.get(locators.HEADER_MENU).should('be.visible')
 })
 
