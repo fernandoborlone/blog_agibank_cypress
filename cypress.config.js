@@ -14,7 +14,6 @@ module.exports = defineConfig({
     saveAllAttempts: false,
     reportDir: 'cypress/reports/html',
     overwrite: false,
-    autoOpen: true,
     html: true,
     json: true,
   },
