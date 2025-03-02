@@ -9,6 +9,8 @@ module.exports = defineConfig({
   reporterOptions: {
     charts: true,
     reportPageTitle: 'Agibank Test Report',
+    reportFilename: 'agibank_report',
+    reportTitle: 'Agibank Blog',
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
@@ -16,6 +18,7 @@ module.exports = defineConfig({
     overwrite: false,
     html: true,
     json: true,
+    timestamp: 'dd-mm-yyyy_HH-MM-ss',
   },
   retries: {
     runMode: 2,
