@@ -5,7 +5,8 @@
   "scripts": {
     "test:cypress-open": "cypress open",
     "test:cypress-run": "npx cypress run",
-    "biome:format": "npx @biomejs/biome format --write ./cypress"
+    "biome:format": "npx @biomejs/biome format --write ./cypress",
+    "cypress:report": "npx mochawesome-merge cypress/reports/json/*.json > cypress/reports/html/report.json && npx marge cypress/reports/html/report.json -f report -o cypress/reports/html"
   },
   "keywords": [],
   "author": "",

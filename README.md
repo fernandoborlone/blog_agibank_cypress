@@ -5,8 +5,20 @@ This project contains automated web testing using Cypress.
 ## Technical Choices
 
 I decided to use Cypress because it is suitable for end-to-end testing of web applications. It can simulate user interactions on multiple pages and test the application's behavior as a whole.
-In addition, cypress has a low learning curve, is one of the most requested tools in companies, has an active community
-____
+In addition, cypress has a low learning curve, is one of the most requested tools in companies, has an active community.
+
+## 🚀 Technologies
+| Tool                                                     | Description                                                    |
+|----------------------------------------------------------|----------------------------------------------------------------|
+| [**Node.js**](https://nodejs.org/en)                      | Development Platform                                            |
+| [**Biome.js**](https://biomejs.dev/)                      | Code formatting and linting tool                                |
+| [**Cypress**](https://www.cypress.io/)                    | Modern web testing framework                                    |
+| [**cypress-mochawesome-reporter**](https://www.npmjs.com/package/cypress-mochawesome-reporter) | Test reporting tool        |
+| [**GitHub Actions**](https://github.com/features/actions) | CI/CD Platform                                                 |
+
+## Test Report Configuration
+
+We use cypress-mochawesome-reporter for generating test reports. Configuration in `cypress.config.js`:
 
 ## Prerequisites
 
@@ -74,9 +86,3 @@ npm run cypress:run
 - Test execution videos are stored in `cypress/videos`
 - Test reports can be found in `cypress/reports`
 _______
-
-## 🚀 Technologies
-| Tool                                   | Description                                                                                                            |
-|----------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**Node.js**](https://nodejs.org/en)   | Development Platform                                                                                                   |
-| [**Biome.js**](https://biomejs.dev/)   | Biome.js is a tool for code formatting and analysis that combines a formatter, a linter, and other features into a single solution |

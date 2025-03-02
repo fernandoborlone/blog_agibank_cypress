@@ -5,6 +5,18 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   requestTimeout: 5000,
   responseTimeout: 5000,
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Agibank Test Report',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+    reportDir: 'cypress/reports/html',
+    overwrite: false,
+    html: true,
+    json: true,
+  },
   retries: {
     runMode: 2,
     openMode: 2,
@@ -15,6 +27,8 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     viewportHeight: 720,
     defaultCommandTimeout: 10000,
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on)
+    },
   },
 })
